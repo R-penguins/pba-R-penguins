@@ -62,9 +62,9 @@ void collide_particle_ball(
   // please uncomment the lines below
   const float p_velo_perp = p.velo.dot(plane_norm);
   const float ball_velo_perp = ball_velo.dot(plane_norm);
-  const Eigen::Vector2f impulse = ((2 * particle_mass * p_velo_perp + ball_mass * ball_velo_perp - particle_mass * ball_velo_perp) / (particle_mass + ball_mass) - p_velo_perp) * particle_mass * plane_norm;
-  p.velo += impulse / particle_mass;
-  ball_velo += -impulse / ball_mass;
+  const Eigen::Vector2f impulse = ((2 * particle_mass * p_velo_perp + ball_mass * ball_velo_perp - particle_mass * ball_velo_perp) / (particle_mass + ball_mass) - ball_velo_perp) * ball_mass * plane_norm;
+  p.velo += -impulse / particle_mass;
+  ball_velo += impulse / ball_mass;
 }
 
 /**
