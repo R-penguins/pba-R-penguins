@@ -77,9 +77,9 @@ Record the computation time by filling the table below.
 
 | #particle | time |
 | --- | --- |
-| 5000 | ? |
-| 10000 | ? |
-| 20000 | ? |
+| 5000 | 2,985 ms |
+| 10000 | 5,379 ms |
+| 20000 | 13,061 ms |
 
 With the simulation with 20k particles, run the program for 200 steps. 
 Then save the screenshot image, overwriting `task03/problem2.png`.
