@@ -59,9 +59,9 @@ Record the computation time by filling the table below.
 
 | #points | time |
 | --- | --- |
-| 5000 | ? |
-| 10000 | ? |
-| 20000 | ? |
+| 5000 | 1,083 ms |
+| 10000 | 2,082 ms |
+| 20000 | 4,022 ms |
 
 
 ## Problem 2
